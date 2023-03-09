@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./order.css">
+
+
+    <title>Single Order</title>
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="d-flex justify-content-start">
+                <div class="text-dark">
+                    <a class="" href="./orderlist.html">
+                        <p><i class="bi bi-arrow-90deg-left pe-1"></i> View all Orders</p>
+                    </a>
+                </div>
+            </div>
+            <section class="">
+                    <div class="row">
+                        <h3 class="">Order No. <span class="mx-3 fw-bold text-dark ">#INV9349</span></h3>
+                    </div>
+                    <div class="row">
+                        <div class="card p-3">
+                            <div class="container">
+                                <div class="d-flex">
+                                    <p>Date of Order:</p>
+                                    <p class="mx-3 fw-bold">Tuesday, 31st January, 2023</p>
+                                </div>
+                                <div class="order-price px-4 py-5 mx-3 rounded-4 text-white">
+                                    <div class="row ">
+                                        <div class="col-3">
+                                            <p>Sub Total</p>
+                                            <h6 class="fw-bold">$ 35,985.09</h6>
+                                        </div>
+                                        <div class="col-3">
+                                            <p>Shipping</p>
+                                            <h6 class="fw-bold">$ 85.09</h6>
+                                        </div>
+                                        <div class="col-3">
+                                            <p>Tax</p>
+                                            <h6 class="fw-bold">$ 385.09</h6>
+                                        </div>
+                                        <div class="col-3">
+                                            <p><span class="badge rounded-pill bg-warning text-white px-2 py-2"><i class=" bi bi-bookmark-fill pe-1"></i>Total Pending Payment</span></p>
+                                            <h4 class="fw-bold">$ 36,985.09</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="m-4">
+                                    <div class="d-flex">
+                                        <h6>Payment Method:</h6>
+                                        <h6 class="mx-3 p-0 fw-bold">Wire Transfer</h6>
+                                    </div>
+                                    <div class="row mt-4">
+                                        <div class="col-3">
+                                            <div>
+                                                <p class="fw-bold">Wire Transfer Account</p>
+                                                <p>Name on Account <br>Bank Name<br>Account Number</p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div>
+                                                <p class="fw-bold">Shipping Address</p>
+                                                <p>ColliCare Logistics BV<br>Manchesterweg 101<br>Groningen, 9744 TS NL</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div>
+                                                <p class="fw-bold">Contact Details</p>
+                                                <p>Needs@listrader.com <br>+31 653752758</p>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div>
+                                                <p class="fw-bold">Downloads</p>
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <a class="text-decoration-none" href="#">Order Lines</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="text-decoration-none" href="#">Proforma</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="text-decoration-none" href="#">Your invoice</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="text-decoration-none" href="#">Payment Confirmation</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row mt-4">
+                        <div class="accordion p-0" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Ordered Products
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Product</th>
+                                                <th scope="col">Quantity</th>
+                                                <th scope="col">Unit Price</th>
+                                                <th scope="col">Sub Total</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 2,500.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</h3>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 5,090.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>60</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$450.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$4,450.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">4</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 2,500.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">5</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</h3>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 5,090.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">6</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>60</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$450.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$4,450.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">7</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 2,500.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">8</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</h3>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 5,090.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">9</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>60</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$450.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$4,450.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">10</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 2,500.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">11</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</h3>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 5,090.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">12</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>60</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$450.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$4,450.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">6</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>60</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$450.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$4,450.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">7</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 2,500.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">8</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</h3>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 5,090.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">9</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>60</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$450.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$4,450.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">10</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 2,500.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">11</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</h3>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 5,090.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">12</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>60</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$450.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$4,450.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 2,500.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</h3>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 5,090.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>60</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$450.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$4,450.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">4</th>
+                                                <td>
+                                                    <div>
+                                                        <p>ACQUA DI GIOIA 5.1 EAU DE PARFUM SPRAY</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <p>49</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 500.25</p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="product-price">
+                                                        <p>$ 2,500.25</p>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </section>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+<script>
+    let addressSwitch = document.getElementById("flexSwitchCheckChecked");
+    let savedAddress = document.getElementById('savedAddress')
+
+    // if(addressSwitch.checked){
+    //     savedAddress.classList.add("d-none")
+    // } else {
+    //     savedAddress.classList.remove("d-none")
+    // }
+    // console.log(addressSwitch.checked);
+</script>
+
+
+</html>
